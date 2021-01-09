@@ -37,7 +37,7 @@ class Beyblade extends EventEmitter {
             name: "Beyblade",
             type: "Type",
             imageLink: "https://images-ext-1.discordapp.net/external/SkyihHxg4MHJ_qWWMLPFNPYVV-Z1XnxCfqd0EQrXYXA/%3Fsize%3D128/https/cdn.discordapp.com/avatars/570115430786531340/e3ff8924f1d5d41c975907008f0059f2.png?width=100&height=100",
-        }, stats)
+        }, stats);
         this.name = stats.name;
         this.type = stats.type;
         this.imageLink = stats.imageLink;
@@ -53,7 +53,9 @@ class Beyblade extends EventEmitter {
      * @returns {Beyblade}
      */
     attachSpecial(special){
-        if(special instanceof Special !== true) throw new Error("Specials must be an instance of the Special class.");
+        if(special instanceof Special !== true){
+            throw new Error("Specials must be an instance of the Special class.");
+        }
         this.specials.push(special);
         return this;
     }
@@ -63,7 +65,9 @@ class Beyblade extends EventEmitter {
      * @returns {Beyblade}
      */
     attachPassive(passive){
-        if(passives instanceof Passive !== true) throw new Error("Passives must be an instance of the Passive class.");
+        if(passive instanceof Passive !== true){
+            throw new Error("Passives must be an instance of the Passive class.");
+        }
         this.passives.push(passive);
         return this;
     }
@@ -73,7 +77,9 @@ class Beyblade extends EventEmitter {
      * @returns {Beyblade}
      */
     attachMode(mode){
-        if(mode instanceof Mode !== true) throw new Error("Modes must be an instance of the Mode class.");
+        if(mode instanceof Mode !== true){
+            throw new Error("Modes must be an instance of the Mode class.");
+        }
         this.modes.push(mode);
         return this;
     }
@@ -83,7 +89,9 @@ class Beyblade extends EventEmitter {
      * @returns {Beyblade}
      */
     setSDChangable(changable){
-        if(!changable || typeof changable !== "boolean") throw new Error("A Boolean must be used to define whether the spin direction of the Bey should be changable.");
+        if(!changable || typeof changable !== "boolean"){
+            throw new Error("A Boolean must be used to define whether the spin direction of the Bey should be changable.");
+        }
         this.sdchangable = changable;
         return this;
     }
@@ -93,7 +101,9 @@ class Beyblade extends EventEmitter {
      * @returns {Beyblade}
      */
     setDefaultSD(value){
-        if(!value || (value.toLowerCase() !== "left" && value.toLowerCase() !== "right")) throw new Error("Spin direction value must be either \"left\" or \"right\"!");
+        if(!value || (value.toLowerCase() !== "left" && value.toLowerCase() !== "right")){
+            throw new Error("Spin direction value must be either \"left\" or \"right\"!");
+        }
         this.sd = value;
         return this;
     }

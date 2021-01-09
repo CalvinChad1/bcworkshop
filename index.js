@@ -8,9 +8,9 @@ const Mode = require("./src/structures/Mode");
 
 
 module.exports = {
-    Workshop: Workshop,
-    Beyblade: Beyblade,
-    Mode: Mode,
-    Passive: Passive,
-    Special: Special
+    Workshop,
+    Beyblade,
+    Passive,
+    Special,
+    Mode
 };
