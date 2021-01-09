@@ -33,7 +33,7 @@ class Workshop extends EventEmitter {
         super();
         this.options = Object.assign({
             generateBeysOnReady: true
-        }, options)
+        }, options);
         if(!directoryPath || !fs.existsSync(directoryPath)){
             throw new Error("Directory to gather Bey data cannot be found!");
         }
@@ -82,8 +82,8 @@ class Workshop extends EventEmitter {
             }
             let directions = {"right": 0, "left": 1};
             code += `this.sd=${directions[bey.sd.toLowerCase()] || 0};this.sdchangable=${bey.sdchangable}`;
-            code += `}}module.exports=${shortened};`
-            let minified = UglifyJS.minify(code)
+            code += `}}module.exports=${shortened};`;
+            let minified = UglifyJS.minify(code);
             fs.writeFileSync(`${this.outputPath}/${shortened}.js`, minified.error || minified.code);
         });
         return this.outputPath;

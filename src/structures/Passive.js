@@ -12,7 +12,9 @@ class Passive {
      */
     constructor(name, requirement, passive){
         this.name = name || "Passive",
-        this.requirement = requirement || function placeholder(){return false};
+        this.requirement = requirement || function placeholder(){
+            return false;
+        };
         this.passive = passive || function passiveplaceholder(){};
     }
 }

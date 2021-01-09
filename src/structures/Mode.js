@@ -14,7 +14,9 @@ class Mode {
      */
     constructor(name, requirement, mode, activateOnStart){
         this.name = name || "Mode",
-        this.requirement = requirement || function placeholder(){return false};
+        this.requirement = requirement || function placeholder(){
+            return false;
+        };
         this.mode = mode || function Modeplaceholder(){};
         this.activateOnStart = activateOnStart || false;
     }

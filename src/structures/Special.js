@@ -13,7 +13,9 @@ class Special {
      */
     constructor(name, requirement, special){
         this.name = name || "Special",
-        this.requirement = requirement || function placeholder(){return false};
+        this.requirement = requirement || function placeholder(){
+            return false;
+        };
         this.special = special || function specialplaceholder(){};
     }
 }
