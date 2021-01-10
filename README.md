@@ -1,10 +1,8 @@
 BCWorkshop
 ==========
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/d5830324a0444abfb68887c9404c7678)](https://www.codacy.com/gh/SunSOG/bcworkshop/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SunSOG/bcworkshop&amp;utm_campaign=Badge_Grade)  
 The one and only library you will need to create Beycord Beys!
 
-Table of Contents
-=================
+**Table of Contents**  
  • [Getting Started](#getting-started)  
  • [How generating works](#how-generating-works)  
  • [Error handling](#error-handling)  
@@ -27,13 +25,13 @@ npm install bcworkshop
 ```
 You can also add ``--save`` after the installation command if you want it saved in your package.json for whatever reason. (OPTIONAL)
 
-After installing BCWorkshop into your project folder, create 2 empty folders for BCWorkshop to read data and generate Beys in. You can name them whatver you want but make sure you remember the folder's usage. You should end up with a project folder that looks something like this:
+After installing BCWorkshop into your project folder, create 2 empty folders for BCWorkshop to read data and generate Beys in. You can name them whatever you want but make sure you remember the folder's usage. You should end up with a project folder that looks something like this:
 ![ProjectFolder](https://media.discordapp.net/attachments/692234599350140961/797386222623784990/unknown.png)  
 That's it! You've set up a development environment needed to create Beys. If you made it this far, you can relax now because you've done the hardest step.
 
 # How generating works
 **Activating**  
-If your have `generateBeysOnReady` set as true on the third parameter of bcworkshop.Workshop, generation will automatically begin once the workshop has finished setting up after you ran your main file where the workshop is in using the `node` command or something else. If it is false, generation won't start if you didn't add `workshop.generate()` somewhere in your main file.  
+If you have `generateBeysOnReady` set as true on the third parameter of bcworkshop.Workshop, generation will automatically begin once the workshop has finished setting up after you run your main file where the workshop is in using the `node` command or something else. If it is false, generation won't start if you didn't add `workshop.generate()` somewhere in your main file.  
 **Reading Data**  
 BCWorkshop reads Bey data from your data directory, which's path is the first parameter of the bcworkshop.Workshop constructor. Each and every file in the data directory should be a `.js` file that contains Bey data such as the one shown in [Examples](#examples). Although BCWorkshop won't actually break but just throw an error at you if it detects a non Beyblade file in your data directory. It's still highly unrecommended to store junk in it.  
 **Generating**  
