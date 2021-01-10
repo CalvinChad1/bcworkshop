@@ -6,7 +6,7 @@ function SACheck(acted, victim, message, player){
 
 function SAExecute(acted, victim, message, player){
     victim.hp = 0;
-    message.channel.createMessage("YAY!! THE OPPONENT DIED LOL!!!!!")
+    message.channel.createMessage("YAY!! THE OPPONENT DIED LOL!!!!!");
 }
 
 const specialAttack = new bcworkshop.Special("Special Attack", SACheck, SAExecute);
