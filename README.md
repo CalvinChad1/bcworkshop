@@ -12,10 +12,12 @@ The one and only library you will need to create Beycord Beys!
 # Getting Started
 > THIS GUIDE ASSUMES THAT YOU HAVE BASIC COMPUTER KNOWLEDGE SUCH AS CREATING FOLDERS OR USING THE TERMINAL.
 
-Make sure you have [Node.js](https://nodejs.org/en/) installed before continuing. Version 12.0.0+ is required. Next, create a folder where you want to make Beys in (this will become your project folder) and open the terminal (command prompt) with the current directory (cd) as your project folder. You will need to type the following in the terminal and continue with the steps it tells you to:
+Make sure you have [Node.js](https://nodejs.org/en/) installed before continuing. Version 12.0.0+ is required. Next, create a folder where you want to make Beys in (this will become your project folder) and open the terminal (command prompt) with the current directory (cd) as your project folder. You will need to type the following in the terminal:
 ```xl
 npm init
 ```
+It will now prompts you to enter some information. But you can just spam enter until it lets you do commands again.  
+![!Terminal1](https://media.discordapp.net/attachments/671569234891112482/798071277394591815/unknown.png)  
 After that, choose ONE installation command that suits you and enter it in the terminal:
 ```xl
 // If you want to install BCWorkshop with no extra coding helpers or performance boosters:
@@ -25,7 +27,7 @@ npm install bcworkshop
 ```
 You can also add ``--save`` after the installation command if you want it saved in your package.json for whatever reason. (OPTIONAL)
 
-After installing BCWorkshop into your project folder, create 2 empty folders for BCWorkshop to read data and generate Beys in. You can name them whatever you want but make sure you remember the folder's usage. You should end up with a project folder that looks something like this:
+After installing BCWorkshop into your project folder, create 2 empty folders for BCWorkshop to read data and generate Beys in. You can name them whatever you want but make sure you remember the folder's usage. You will also need to create a file named `index.js` or whatever you called your main file in the `npm init` prompt. You should end up with a project folder that looks something like this:
 ![ProjectFolder](https://media.discordapp.net/attachments/692234599350140961/797386222623784990/unknown.png)  
 That's it! You've set up a development environment needed to create Beys. If you made it this far, you can relax now because you've done the hardest step.
 
