@@ -55,10 +55,10 @@ class Workshop extends EventEmitter {
         console.log("Bey generation began!")
         let directory = fs.readdirSync(this.directoryPath);
         directory.forEach((name) => {
-            console.log(`Processing ${this.directoryPath}/${name}...`)
-            let bey = require(`${this.directoryPath}/${name}`);
+            console.log(`Processing ${this.directoryPath}${name}...`)
+            let bey = require(`${this.directoryPath}${name}`);
             if(bey instanceof Beyblade !== true){
-                throw new Error(`${this.directoryPath}/${name} is not a Beyblade!`);
+                throw new Error(`${this.directoryPath}${name} is not a Beyblade!`);
             }
             console.log(`Acquired Beyblade ${bey.name}!`)
             let shortened = bey.name.replace(/\W/g, "");

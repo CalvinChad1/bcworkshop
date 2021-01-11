@@ -50,7 +50,7 @@ BCWorkshop will overwrite the `.js` file the broken Bey is supposed to be genera
 **Example Workshop**
 ```js
 const bcworkshop = require("bcworkshop");
-const workshop = new bcworkshop.Workshop("path/to/data/directory", "path/to/generate/beys/in", {generateBeysOnReady: true});
+const workshop = new bcworkshop.Workshop("path/to/data/directory/", "path/to/generate/beys/in/", {generateBeysOnReady: true});
 ```
 **Example Beyblade (with special move)**
 ```js
