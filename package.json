@@ -1,6 +1,6 @@
 {
   "name": "bcworkshop",
-  "version": "0.0.1",
+  "version": "0.0.1a",
   "description": "The only library you will need to create Beyblades for Beycord!",
   "main": "index.js",
   "scripts": {
