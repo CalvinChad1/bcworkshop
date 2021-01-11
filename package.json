@@ -1,6 +1,6 @@
 {
   "name": "bcworkshop",
-  "version": "0.0.1-dev",
+  "version": "0.0.1",
   "description": "The only library you will need to create Beyblades for Beycord!",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/SunSOG/bcworkshop#readme",
   "dependencies": {
-    "uglify-es": "github:mishoo/UglifyJS#harmony"
+    "uglify-es": "^3.3.9"
   },
   "devDependencies": {
     "@types/node": "^12.12.2",
