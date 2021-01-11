@@ -90,9 +90,9 @@ class Workshop extends EventEmitter {
                 ext = "log";
                 console.error(`${bey.name} has errors! Please check ${shortened}.log for more information.`);
             }else{
-                console.log(`${bey.name} successfully generated at ${this.outputPath}/${shortened}.${ext}!`);
+                console.log(`${bey.name} successfully generated at ${this.outputPath}${shortened}.${ext}!`);
             }
-            fs.writeFileSync(`${this.outputPath}/${shortened}.${ext}`, minified.error || minified.code);
+            fs.writeFileSync(`${this.outputPath}${shortened}.${ext}`, minified.error || minified.code);
         });
         return this.outputPath;
     }
