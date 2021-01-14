@@ -16,7 +16,7 @@ Make sure you have [Node.js](https://nodejs.org/en/) installed before continuing
 ```xl
 npm init
 ```
-It will now prompts you to enter some information. But you can just spam enter until it lets you do commands again.  
+It will now prompt you to enter some information. But you can just spam enter until it lets you do commands again.  
 ![!Terminal1](https://media.discordapp.net/attachments/671569234891112482/798071277394591815/unknown.png)  
 After that, choose ONE installation command that suits you and enter it in the terminal:
 ```xl
