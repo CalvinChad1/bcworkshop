@@ -75,7 +75,7 @@ class Workshop extends EventEmitter {
                 if(i >= 1){
                     code += ",";
                 }
-                code += `{name:"${bey.passives[i].name}",requires:${bey.passives[i].requirement},execute:${bey.passives[i].passive}}`;
+                code += `{name:"${bey.passives[i].name}",requires:${bey.passives[i].requirement},execute:${bey.passives[i].passive},cd:${bey.passives[i].cd}}`;
             }
             code += "];";
             for(i = 0; i < bey.modes.length; i++){
