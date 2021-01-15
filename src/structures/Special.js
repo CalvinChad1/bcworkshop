@@ -7,9 +7,9 @@
 class Special {
     /**
      * 
-     * @arg {String} name The name of the special move. 
-     * @arg {Function} requirement The function used to define whether the special is executable. MUST RETURN A BOOLEAN!
-     * @arg {Function} special The actual special move to be executed.
+     * @param {String} name The name of the special move. 
+     * @param {Function} requirement The function used to define whether the special is executable. MUST RETURN A BOOLEAN!
+     * @param {Function} special The actual special move to be executed.
      */
     constructor(name, requirement, special){
         this.name = name || "Special",

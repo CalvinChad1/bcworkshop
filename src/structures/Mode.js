@@ -7,9 +7,9 @@
 
 class Mode {
     /**
-     * @arg {String} name The name of the mode.
-     * @arg {Function} requirement The function used to identify whether or not the mode should activate. MUST RETURN A BOOLEAN!!
-     * @arg {Function} mode Stuff to do when the Bey has entered the mode. (OPTIONAL)
+     * @param {String} name The name of the mode.
+     * @param {Function} requirement The function used to identify whether or not the mode should activate. MUST RETURN A BOOLEAN!!
+     * @param {Function} mode Stuff to do when the Bey has entered the mode. (OPTIONAL)
      */
     constructor(name, requirement, mode){
         this.name = name || "Mode",

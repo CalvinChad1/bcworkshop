@@ -26,10 +26,10 @@ const Special = require("./structures/Special");
 
 class Beyblade extends EventEmitter {
     /**
-     * @arg {Object} [stats] Statistics of the Bey.
-     * @arg {String} [stats.name] The name of the Bey.
-     * @arg {String} [stats.type] The type of the Bey (Attack, Defense, Stamina, Balance).
-     * @arg {String} [stats.imageLink] The image link of the Bey (file path or web link).
+     * @param {Object} [stats] Statistics of the Bey.
+     * @param {String} [stats.name] The name of the Bey.
+     * @param {String} [stats.type] The type of the Bey (Attack, Defense, Stamina, Balance).
+     * @param {String} [stats.imageLink] The image link of the Bey (file path or web link).
      */
     constructor(stats){
         super();
@@ -49,7 +49,7 @@ class Beyblade extends EventEmitter {
     }
     /**
      * Attaches a special to the Bey
-     * @arg {Special} special The special to be added.
+     * @param {Special} special The special to be added.
      * @returns {Beyblade}
      */
     attachSpecial(special){
@@ -61,7 +61,7 @@ class Beyblade extends EventEmitter {
     }
     /**
      * Attaches a passive to the Bey.
-     * @arg {Passive} passive The passive to be added.
+     * @param {Passive} passive The passive to be added.
      * @returns {Beyblade}
      */
     attachPassive(passive){
@@ -73,7 +73,7 @@ class Beyblade extends EventEmitter {
     }
     /**
      * Attaches a mode to the Bey.
-     * @arg {Mode} mode The mode to be attached.
+     * @param {Mode} mode The mode to be attached.
      * @returns {Beyblade}
      */
     attachMode(mode){
@@ -85,7 +85,7 @@ class Beyblade extends EventEmitter {
     }
     /**
      * Sets the possibly of a spin direction change.
-     * @arg {Boolean} changable The possibility referenced by a Boolean.
+     * @param {Boolean} changable The possibility referenced by a Boolean.
      * @returns {Beyblade}
      */
     setSDChangable(changable){
@@ -97,7 +97,7 @@ class Beyblade extends EventEmitter {
     }
     /**
      * Sets the default spin direction for the Bey to be in if not changed by the player.
-     * @arg {String} value Must be either "Left" or "Right"
+     * @param {String} value Must be either "Left" or "Right"
      * @returns {Beyblade}
      */
     setDefaultSD(value){

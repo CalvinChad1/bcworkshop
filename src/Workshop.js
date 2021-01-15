@@ -21,10 +21,10 @@ const Beyblade = require("./Beyblade");
 
 class Workshop extends EventEmitter {
     /**
-     * @arg {String} directoryPath File path to the directory that the Workshop should read from to gather data for Bey generations.
-     * @arg {String} outputPath File path to the directory that Beys will be generated in.
-     * @arg {Object} [options] Workshop options.
-     * @arg {Boolean} [options.generateBeysOnReady] Whether the Workshop should start generating Beys when it is ready. (Only does it once.)
+     * @param {String} directoryPath File path to the directory that the Workshop should read from to gather data for Bey generations.
+     * @param {String} outputPath File path to the directory that Beys will be generated in.
+     * @param {Object} [options] Workshop options.
+     * @param {Boolean} [options.generateBeysOnReady] Whether the Workshop should start generating Beys when it is ready. (Only does it once.)
      */
     constructor(directoryPath, outputPath, options){
         super();
