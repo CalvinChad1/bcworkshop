@@ -81,6 +81,9 @@ class Workshop extends EventEmitter {
             for(i = 0; i < bey.modes.length; i++){
                 code += `this.${bey.modes[i].trim()} = {active:${bey.modes[i].activateOnStart},requires:${bey.modes[i].requirement},boost:${bey.modes[i].mode}};`;
             }
+            for(i = 0; i < bey.vars.length; i++){
+                code += `this.${bey.vars[i].name}=${bey.vars[i].value};`
+            }
             let directions = {"right": 0, "left": 1};
             code += `this.sd=${directions[bey.sd.toLowerCase()] || 0};this.sdchangable=${bey.sdchangable}`;
             code += `}}module.exports=${shortened};`;
