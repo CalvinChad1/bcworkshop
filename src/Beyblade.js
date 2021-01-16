@@ -44,6 +44,7 @@ class Beyblade extends EventEmitter {
         this.specials = [];
         this.passives = [];
         this.modes = [];
+        this.vars = [];
         this.sdchangable = false;
         this.sd = "Right";
     }
@@ -105,6 +106,16 @@ class Beyblade extends EventEmitter {
             throw new Error("Spin direction value must be either \"left\" or \"right\"!");
         }
         this.sd = value;
+        return this;
+    }
+    /**
+     * 
+     * @param {String} identifier The idenifier (name) of the variable.
+     * @param {*} value The value the variable should contain.
+     * @returns {Beyblade}
+     */
+    addVariable(identifier, value){
+        this.vars.push({name: identifier, value: value});
         return this;
     }
 }
