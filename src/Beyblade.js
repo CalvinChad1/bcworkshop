@@ -110,11 +110,11 @@ class Beyblade extends EventEmitter {
     }
     /**
      * 
-     * @param {String} identifier The idenifier (name) of the variable.
-     * @param {*} value The value the variable should contain.
+     * @param {String} identifier The idenifier (name) of the property.
+     * @param {*} value The value the property should contain.
      * @returns {Beyblade}
      */
-    addVariable(identifier, value){
+    addProperty(identifier, value){
         this.vars.push({name: identifier, value: value});
         return this;
     }
