@@ -85,7 +85,15 @@ class Workshop extends EventEmitter {
                 code += `this.${bey.vars[i].name}=${bey.vars[i].value.toString()};`
             }
             let directions = {"right": 0, "left": 1};
-            code += `this.sd=${directions[bey.sd.toLowerCase()] || 0};this.sdchangable=${bey.sdchangable}`;
+            code += `this.sd=${directions[bey.sd.toLowerCase()] || 0};this.sdchangable=${bey.sdchangable};`;
+            code += "this.aliases=[";
+            for(i = 0; i < bey.aliases.length; i++){
+                if(i >= 1){
+                    code += ",";
+                }
+                code += `"${bey.aliases[i].toString()}"`;
+            }
+            code += "]";
             code += `}}module.exports=${shortened};`;
             let minified = UglifyJS.minify(code);
             let ext = "js";
