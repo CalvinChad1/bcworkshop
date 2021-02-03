@@ -94,7 +94,7 @@ class Beyblade extends EventEmitter {
      * @returns {Beyblade}
      */
     setSDChangable(changable){
-        if(!changable || typeof changable !== "boolean"){
+        if(!changable || changable !== true || changable !== false){
             throw new Error("A Boolean must be used to define whether the spin direction of the Bey should be changable.");
         }
         this.sdchangable = changable;
