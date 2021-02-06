@@ -62,7 +62,7 @@ class Workshop extends EventEmitter {
             }
             console.log(`Acquired Beyblade ${bey.name}!`)
             let shortened = bey.name.replace(/\W/g, "");
-            let code = `const Beyblade=require("./Beyblade.js");class ${shortened} extends Beyblade{constructor(){super("${bey.name}","${bey.type}","${bey.imageLink}");this.specials=[`;
+            let code = `const Beyblade=require("./Beyblade.js");class ${shortened} extends Beyblade{constructor(firstOwner,id){super("${bey.name}","${bey.type}","${bey.imageLink}",firstOwner,id);this.specials=[`;
             var i;
             for(i = 0; i < bey.specials.length; i++){
                 if(i >= 1){
