@@ -1,6 +1,6 @@
 {
   "name": "bcworkshop",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The only library you will need to create Beyblades for Beycord!",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "keywords": [
     "beyblade"
   ],
-  "author": "SunSOG <john@overcold.cf>",
+  "author": "SunSOG <john@overcold.xyz>",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/SunSOG/bcworkshop/issues"
@@ -31,7 +31,6 @@
     "typescript": "^3.4.3"
   },
   "optionalDependencies": {
-    "eventemitter3": "^4.0.7",
-    "discord.js": "^12.3.1"
+    "eventemitter3": "^4.0.7"
   }
 }

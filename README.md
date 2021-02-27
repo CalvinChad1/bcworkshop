@@ -77,4 +77,4 @@ module.exports = BEYNAME;
 You can view more examples [here](https://github.com/SunSOG/bcworkshop/tree/dev/examples).
 
 # Useful links
- • [Documentation GitBook](https://bcworkshop.overcold.cf)
+ • [Documentation GitBook](https://workshop.overcold.xyz)
