@@ -74,7 +74,7 @@ const BEYNAME = new bcworkshop.Beyblade({name: "BEY NAME", type: "BEY TYPE", ima
 module.exports = BEYNAME;
 // EXPORTING THE BEY IS EXTREMELY IMPORTANT!! BCWorkshop won't recognize the Bey in the file if it isn't exported using [module.exports].
 ```
-You can view more examples [here](https://github.com/SunSOG/bcworkshop/tree/dev/examples).
+You can view more examples [here](https://github.com/CorruptX/bcworkshop/tree/dev/examples).
 
 # Useful links
  • [Documentation GitBook](https://workshop.overcold.xyz)
